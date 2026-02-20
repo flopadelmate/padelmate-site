@@ -20,7 +20,7 @@ const IGNORE_DIRS = new Set([".git", ".next", "node_modules", "dist", "build", "
 const MOJIBAKE_TOKENS = [
   String.fromCharCode(0x00c3),
   String.fromCharCode(0x00c2),
-  String.fromCharCode(0xfffd)
+  String.fromCharCode(0xfffd),
 ];
 
 async function walk(dirPath) {

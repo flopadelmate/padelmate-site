@@ -16,20 +16,12 @@ export default async function TermsPage() {
 
   return (
     <main className="container page">
-      <header className="terms-header">
-        <h1>CGU et CGV</h1>
-        <p>
-          Cette URL canonique regroupe les deux documents. Des URLs dediees peuvent etre ajoutees
-          plus tard (ex: /terms/cgu et /terms/cgv) sans casser /terms.
-        </p>
-      </header>
-
       <section id="cgu">
-        <LegalDocument document={cguDocument} headingLevel={2} />
+        <LegalDocument document={cguDocument} />
       </section>
 
       <section id="cgv">
-        <LegalDocument document={cgvDocument} headingLevel={2} />
+        <LegalDocument document={cgvDocument} />
       </section>
     </main>
   );

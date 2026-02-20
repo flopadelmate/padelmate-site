@@ -128,3 +128,14 @@ Cette variable est prête pour un usage futur, sans activer de web-app dans ce r
 4. Déployer.
 
 Important: ne pas activer de static export (`output: "export"`).
+
+## Source legale mobile (verbatim)
+
+Le contenu juridique de `/privacy`, `/terms` et `/legal` est repris des ecrans legaux du repo mobile `D:/dev/PadelMate/forehand`:
+
+- `src/screens/settings/PrivacyPolicyScreen.tsx`
+- `src/screens/settings/TermsScreen.tsx`
+- `src/screens/settings/CGVScreen.tsx`
+- `src/screens/settings/LegalNoticeScreen.tsx`
+
+La page `/delete-account` assemble des extraits verbatim de `TermsScreen` et `PrivacyPolicyScreen` (pas de texte source dedie dans l'app mobile).
