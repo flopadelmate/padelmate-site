@@ -32,6 +32,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="fr">
       <body>
+        <a className="skip-link" href="#main-content">
+          Aller au contenu
+        </a>
         <div className="site-shell">
           {children}
           <Footer />

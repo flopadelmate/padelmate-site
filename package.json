@@ -9,11 +9,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint . --max-warnings=0",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "check:bom": "node scripts/check-bom.mjs",
+    "audit:prod": "npm audit --omit=dev",
+    "audit:full": "npm audit || node -e \"process.exit(0)\"",
     "verify": "npm run lint && npm run typecheck && npm run build && npm run check:bom"
   },
   "dependencies": {

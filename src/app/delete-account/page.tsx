@@ -15,7 +15,7 @@ export default async function DeleteAccountPage() {
   const document = await getLegalDocument("delete-account");
 
   return (
-    <main className="container page">
+    <main id="main-content" className="container page">
       <LegalDocument document={document} />
     </main>
   );

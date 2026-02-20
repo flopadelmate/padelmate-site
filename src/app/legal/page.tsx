@@ -15,7 +15,7 @@ export default async function LegalPage() {
   const document = await getLegalDocument("legal");
 
   return (
-    <main className="container page">
+    <main id="main-content" className="container page">
       <LegalDocument document={document} />
     </main>
   );

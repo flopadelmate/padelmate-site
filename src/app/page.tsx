@@ -10,7 +10,7 @@ export const metadata: Metadata = createPageMetadata({
 
 export default function HomePage() {
   return (
-    <main>
+    <main id="main-content">
       <section className="hero">
         <div className="container hero__content">
           <p className="eyebrow">PadelMate</p>

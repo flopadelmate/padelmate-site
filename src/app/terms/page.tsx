@@ -15,7 +15,7 @@ export default async function TermsPage() {
   const [cguDocument, cgvDocument] = await getTermsDocuments();
 
   return (
-    <main className="container page">
+    <main id="main-content" className="container page">
       <section id="cgu">
         <LegalDocument document={cguDocument} />
       </section>

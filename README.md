@@ -1,26 +1,26 @@
 # padelmate-site
 
-Site vitrine public de PadelMate (landing + pages légales) pour répondre aux exigences de publication Google Play Console.
+Site vitrine public de PadelMate (landing + pages legales) pour repondre aux exigences de publication Google Play Console.
 
 ## Objectif
 
 - Landing page simple et SEO-friendly.
-- URLs légales publiques et stables:
+- URLs legales publiques et stables:
   - `/privacy`
-  - `/terms` (CGU + CGV sur la même page)
+  - `/terms` (CGU + CGV sur la meme page)
   - `/legal`
   - `/delete-account`
-- Déploiement standard Vercel (pas de static export).
+- Deploiement standard Vercel (pas de static export).
 
 ## Stack
 
 - Next.js App Router
 - TypeScript strict
-- Markdown + frontmatter pour le contenu légal
+- Markdown + frontmatter pour le contenu legal
 
-## Prérequis
+## Prerequis
 
-- Node.js `20.x` (déclaré dans `engines.node`)
+- Node.js `20.x` (declare dans `engines.node`)
 - npm
 
 ## Installation
@@ -29,19 +29,20 @@ Site vitrine public de PadelMate (landing + pages légales) pour répondre aux e
 npm install
 ```
 
-## Développement
+## Developpement
 
 ```bash
 npm run dev
 ```
 
-## Validation
+## Validation locale
 
 ```bash
 npm run lint
 npm run typecheck
 npm run build
 npm run check:bom
+npm run audit:prod
 ```
 
 Ou en une commande:
@@ -54,17 +55,45 @@ npm run verify
 
 - `dev`: lance le serveur de dev Next.js
 - `build`: build de production
-- `start`: démarre le build de production
-- `lint`: lint ESLint
-- `typecheck`: vérification TypeScript
+- `start`: demarre le build de production
+- `lint`: lint ESLint via CLI (`eslint . --max-warnings=0`)
+- `typecheck`: verification TypeScript
 - `format`: formatage Prettier
-- `format:check`: vérification formatage
-- `check:bom`: vérifie BOM + tokens courants de mojibake
-- `verify`: suite complète lint + typecheck + build + encodage
+- `format:check`: verification formatage
+- `check:bom`: verifie BOM + tokens courants de mojibake
+- `audit:prod`: audit npm bloque sur dependances runtime
+- `audit:full`: audit npm informatif (inclut devDependencies)
+- `verify`: suite complete lint + typecheck + build + encodage
 
-## Contenu légal
+## CI GitHub Actions
 
-Les textes légaux sont dans `content/legal/*.md` avec frontmatter obligatoire:
+Workflow: `.github/workflows/ci.yml`
+
+Declenchement:
+
+- `push` sur `main` et `master`
+- `pull_request` vers `main` et `master`
+
+Gates bloquants executes en CI:
+
+- `npm ci`
+- `npm run lint`
+- `npm run typecheck`
+- `npm run build`
+- `npm run check:bom`
+- `npm run audit:prod`
+
+## Politique securite dependances
+
+- Les vulnerabilites runtime (`audit:prod`) sont bloquantes.
+- Les vulnerabilites limitees aux devDependencies sont informatives dans ce repo.
+- Une revue mensuelle des devDependencies est requise.
+
+Detail des quality gates: `docs/quality-gates.md`.
+
+## Contenu legal
+
+Les textes legaux sont dans `content/legal/*.md` avec frontmatter obligatoire:
 
 ```md
 ---
@@ -74,34 +103,34 @@ lastUpdated: "YYYY-MM-DD"
 ---
 ```
 
-Le chargement du contenu est isolé dans `src/lib/legal-content.ts`.
+Le chargement du contenu est isole dans `src/lib/legal-content.ts`.
 
 - Lecture via `fs` (runtime Node).
 - Rendu uniforme via `src/components/LegalDocument.tsx` (server component, sans `use client`).
 
-## Runtime Node pour pages légales
+## Runtime Node pour pages legales
 
-Les routes légales forcent:
+Les routes legales forcent:
 
 ```ts
 export const runtime = "nodejs";
 ```
 
-Routes concernées:
+Routes concernees:
 
 - `src/app/privacy/page.tsx`
 - `src/app/terms/page.tsx`
 - `src/app/legal/page.tsx`
 - `src/app/delete-account/page.tsx`
 
-## `/terms` (canonique)
+## /terms (canonique)
 
-- `/terms` reste l’URL canonique et assemble les documents CGU + CGV.
-- La structure permet d’ajouter plus tard `/terms/cgu` et `/terms/cgv` sans casser `/terms`.
+- `/terms` reste l'URL canonique et assemble les documents CGU + CGV.
+- La structure permet d'ajouter plus tard `/terms/cgu` et `/terms/cgv` sans casser `/terms`.
 
 ## Configuration future web-app
 
-Variable préparée:
+Variable preparee:
 
 - `NEXT_PUBLIC_WEB_APP_URL` (fallback: `https://app.padelmate.com`)
 
@@ -109,23 +138,23 @@ Fichier:
 
 - `src/config/site.ts`
 
-Cette variable est prête pour un usage futur, sans activer de web-app dans ce repo.
+Cette variable est prete pour un usage futur, sans activer de web-app dans ce repo.
 
 ## SEO
 
 - Metadata globale dans `src/app/layout.tsx`
 - Metadata par page via `src/lib/metadata.ts`
-- `sitemap.xml` via `src/app/sitemap.ts`
+- `sitemap.xml` via `src/app/sitemap.ts` (date derivee du contenu legal, fallback date de build)
 - `robots.txt` via `src/app/robots.ts`
 
-## Déploiement Vercel
+## Deploiement Vercel
 
 1. Importer le repo dans Vercel.
-2. Laisser les réglages Next.js standards.
-3. Définir les variables d’environnement si nécessaire:
+2. Laisser les reglages Next.js standards.
+3. Definir les variables d'environnement si necessaire:
    - `NEXT_PUBLIC_SITE_URL`
-   - `NEXT_PUBLIC_WEB_APP_URL` (optionnel, fallback déjà prévu)
-4. Déployer.
+   - `NEXT_PUBLIC_WEB_APP_URL` (optionnel, fallback deja prevu)
+4. Deployer.
 
 Important: ne pas activer de static export (`output: "export"`).
 

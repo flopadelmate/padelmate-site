@@ -15,7 +15,7 @@ export default async function PrivacyPage() {
   const document = await getLegalDocument("privacy");
 
   return (
-    <main className="container page">
+    <main id="main-content" className="container page">
       <LegalDocument document={document} />
     </main>
   );
