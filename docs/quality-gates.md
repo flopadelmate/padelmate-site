@@ -10,6 +10,7 @@ Les gates suivants doivent passer en local et en CI:
 - `npm run typecheck`
 - `npm run build`
 - `npm run check:bom`
+- `npm run check:delete-account-copy`
 - `npm run audit:prod`
 
 Un echec sur l'un de ces points bloque la fusion de la PR.

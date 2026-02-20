@@ -203,6 +203,71 @@ main {
   color: var(--muted);
 }
 
+.delete-account-page {
+  display: grid;
+  gap: 1rem;
+}
+
+.delete-account-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.delete-account-panel h1,
+.delete-account-panel h2 {
+  margin-top: 0;
+}
+
+.delete-account-panel p:last-child,
+.delete-account-panel ol:last-child,
+.delete-account-panel ul:last-child {
+  margin-bottom: 0;
+}
+
+.delete-account-cta-card {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  padding: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) - 2px);
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.delete-account-button {
+  margin-top: 0;
+  font-size: 0.96rem;
+  padding: 0.62rem 0.95rem;
+}
+
+.delete-account-fallback {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.delete-account-list {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.delete-account-annex-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 640px) {
+  .delete-account-page {
+    gap: 1.25rem;
+  }
+
+  .delete-account-panel {
+    padding: 1.5rem;
+  }
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.9);

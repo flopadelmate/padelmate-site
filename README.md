@@ -42,6 +42,7 @@ npm run lint
 npm run typecheck
 npm run build
 npm run check:bom
+npm run check:delete-account-copy
 npm run audit:prod
 ```
 
@@ -61,9 +62,10 @@ npm run verify
 - `format`: formatage Prettier
 - `format:check`: verification formatage
 - `check:bom`: verifie BOM + tokens courants de mojibake
+- `check:delete-account-copy`: verifie le contenu critique de `/delete-account` (accents + fallback e-mail)
 - `audit:prod`: audit npm bloque sur dependances runtime
 - `audit:full`: audit npm informatif (inclut devDependencies)
-- `verify`: suite complete lint + typecheck + build + encodage
+- `verify`: suite complete lint + typecheck + checks encodage/copy + build
 
 ## CI GitHub Actions
 
@@ -81,6 +83,7 @@ Gates bloquants executes en CI:
 - `npm run typecheck`
 - `npm run build`
 - `npm run check:bom`
+- `npm run check:delete-account-copy`
 - `npm run audit:prod`
 
 ## Politique securite dependances
@@ -107,6 +110,7 @@ Le chargement du contenu est isole dans `src/lib/legal-content.ts`.
 
 - Lecture via `fs` (runtime Node).
 - Rendu uniforme via `src/components/LegalDocument.tsx` (server component, sans `use client`).
+- La page `/delete-account` utilise une page dediee orientee action (CTA e-mail) et conserve une annexe legale issue de `content/legal/delete-account.md`.
 
 ## Runtime Node pour pages legales
 
@@ -167,4 +171,8 @@ Le contenu juridique de `/privacy`, `/terms` et `/legal` est repris des ecrans l
 - `src/screens/settings/CGVScreen.tsx`
 - `src/screens/settings/LegalNoticeScreen.tsx`
 
-La page `/delete-account` assemble des extraits verbatim de `TermsScreen` et `PrivacyPolicyScreen` (pas de texte source dedie dans l'app mobile).
+La page `/delete-account` est une page dediee a la demande de suppression de compte:
+
+- CTA principal en `mailto:` simple (sans pre-remplissage impose).
+- Adresse e-mail affichee en clair en fallback: `max.padelmate@gmail.com`.
+- Annexe legale de reference chargee depuis `content/legal/delete-account.md`, basee sur les passages applicables de `TermsScreen` et `PrivacyPolicyScreen`.

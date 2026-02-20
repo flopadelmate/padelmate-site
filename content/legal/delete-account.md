@@ -1,79 +1,60 @@
 ---
 title: Suppression de compte
-description: Extraits verbatim des ecrans Terms et PrivacyPolicy de l'application mobile PadelMate.
+description: Annexe légale de référence sur la suppression de compte et les données associées.
 lastUpdated: "2026-02-20"
 ---
 
-# Suppression de compte - Extraits des documents legaux PadelMate
+# Annexe légale - Suppression de compte PadelMate
 
-## Extrait CGU
+Ce document rassemble les informations légales utiles pour demander la suppression de votre compte PadelMate.
 
-## 13. Suspension et suppression du Compte
+## 1. Demande de suppression du compte
 
-En cas de violation des présentes CGU, d'utilisation abusive ou frauduleuse de l'Application, ou de comportement manifestement inapproprié, l'Éditeur se réserve le droit de :
+L'Utilisateur peut, à tout moment, demander la suppression de son Compte :
 
-• suspendre temporairement l'accès au Compte de l'Utilisateur ;
+- via les fonctionnalités prévues dans l'Application ;
+- ou en contactant l'éditeur par e-mail.
 
-• supprimer tout Contenu non conforme ;
+Adresse de contact : [max.padelmate@gmail.com](mailto:max.padelmate@gmail.com)
 
-• résilier définitivement le Compte de l'Utilisateur, sans préjudice des éventuelles actions judiciaires pouvant être engagées.
+## 2. Effets de la suppression
 
-L'Utilisateur peut, à tout moment, demander la suppression de son Compte via les fonctionnalités prévues au sein de l'Application ou en contactant l'Éditeur à l'adresse indiquée à l'article 2. La suppression du Compte peut entraîner la suppression ou l'anonymisation de certaines données, dans le respect de la Politique de confidentialité et des obligations légales.
+La suppression du Compte peut entraîner :
 
-## Extraits Politique de confidentialite
+- la suppression de données personnelles ;
+- l'anonymisation de certaines données ;
+- l'application de mesures de conservation limitées lorsque la loi l'impose.
 
-## 7. Combien de temps les données sont-elles conservées ?
+Ces opérations sont effectuées dans le respect de la Politique de confidentialité et des obligations légales applicables.
 
-Les données personnelles sont conservées pendant une durée n'excédant pas celle nécessaire aux finalités pour lesquelles elles sont traitées, augmentée le cas échéant des délais de prescription légale.
+## 3. Durées de conservation (rappel)
 
-À titre indicatif :
+Les durées de conservation sont limitées à ce qui est nécessaire aux finalités de traitement, avec archivage intermédiaire si besoin légal.
 
-• Données de compte et de profil : pendant toute la durée d'utilisation de l'Application et jusqu'à la suppression du compte par l'Utilisateur, puis archivage intermédiaire pendant une durée maximale de 3 ans à des fins de preuve ou de gestion de contentieux.
+- Données de compte et profil : pendant l'utilisation de l'Application, puis archivage intermédiaire jusqu'à 3 ans pour preuve ou contentieux.
+- Données de matchs et interactions sociales : pendant l'utilisation de l'Application, puis archivage intermédiaire aligné sur les données de compte.
+- Logs techniques et données de sécurité : conservation maximale de 12 mois, sauf obligation légale contraire.
+- Données de géolocalisation : conservation strictement nécessaire aux fonctionnalités, puis suppression ou anonymisation.
+- Données de mesure d'audience : conservation n'excédant pas 13 mois, selon les recommandations applicables.
 
-• Données relatives aux matchs et interactions sociales : pendant la durée d'utilisation de l'Application, puis archivage intermédiaire pour une durée limitée, alignée sur celle des données de compte.
+## 4. Droits des personnes
 
-• Logs techniques et données de sécurité : conservés pour une durée maximale de 12 mois, sauf obligation légale spécifique imposant une durée différente.
+Conformément à la réglementation applicable, vous disposez notamment des droits :
 
-• Données de géolocalisation : conservées pendant une durée strictement nécessaire aux fonctionnalités correspondantes et ne sont pas conservées au-delà, sauf anonymisation.
+- d'accès ;
+- de rectification ;
+- d'effacement ;
+- de limitation ;
+- d'opposition ;
+- de portabilité ;
+- de retrait du consentement (lorsqu'applicable).
 
-• Données issues de la mesure d'audience : conservées pour une durée n'excédant pas 13 mois, dans le respect des recommandations applicables.
+Vous pouvez également introduire une réclamation auprès de la [CNIL](https://www.cnil.fr/).
 
-Les durées précises peuvent être ajustées pour respecter les recommandations des autorités de contrôle et les contraintes techniques ou légales applicables.
+## 5. Exercice des droits et suivi de la demande
 
-## 8. Quels sont vos droits ?
+Pour toute question ou pour exercer vos droits, utilisez l'adresse de contact indiquée ci-dessus.
 
-Conformément à la réglementation applicable, vous disposez des droits suivants sur vos données personnelles :
+Une réponse est apportée dans les délais prévus par la réglementation en vigueur.
 
-• Droit d'accès : obtenir confirmation que des données vous concernant sont traitées et, le cas échéant, en recevoir une copie.
-
-• Droit de rectification : demander la rectification des données inexactes ou incomplètes vous concernant.
-
-• Droit d'effacement : demander l'effacement de vos données dans les limites prévues par la loi (par exemple lorsque les données ne sont plus nécessaires au regard des finalités).
-
-• Droit à la limitation du traitement dans certains cas.
-
-• Droit d'opposition :
-
-• à tout moment, pour des raisons tenant à votre situation particulière, à un traitement fondé sur l'intérêt légitime ;
-
-• à la prospection, le cas échéant.
-
-• Droit à la portabilité : recevoir les données que vous avez fournies dans un format structuré, couramment utilisé et lisible par machine, lorsque le traitement est fondé sur votre consentement ou l'exécution d'un contrat et effectué à l'aide de procédés automatisés.
-
-• Droit de retirer votre consentement à tout moment, lorsque le traitement est fondé sur le consentement (par exemple pour la géolocalisation ou certaines mesures d'audience).
-
-• Droit d'introduire une réclamation auprès de l'autorité de contrôle compétente, en France la CNIL (www.cnil.fr).
-
-Vous pouvez également définir des directives relatives au sort de vos données après votre décès.
-
-## 9. Comment exercer vos droits ?
-
-Pour exercer vos droits ou pour toute question relative à la présente politique de confidentialité, vous pouvez contacter l'éditeur de PadelMate :
-
-Par e-mail : max.padelmate@gmail.com
-
-Le cas échéant, via les fonctionnalités de contact accessibles dans l'Application.
-
-Une réponse vous sera apportée dans les délais prévus par la réglementation en vigueur.
-
-En cas de difficulté persistante, vous disposez du droit d'introduire une réclamation auprès de la Commission nationale de l'informatique et des libertés (CNIL).
+En cas de difficulté persistante, vous pouvez saisir l'autorité de contrôle compétente (CNIL).

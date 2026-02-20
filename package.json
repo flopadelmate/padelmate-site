@@ -14,9 +14,10 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "check:bom": "node scripts/check-bom.mjs",
+    "check:delete-account-copy": "node scripts/check-delete-account-copy.mjs",
     "audit:prod": "npm audit --omit=dev",
     "audit:full": "npm audit || node -e \"process.exit(0)\"",
-    "verify": "npm run lint && npm run typecheck && npm run build && npm run check:bom"
+    "verify": "npm run lint && npm run typecheck && npm run check:bom && npm run check:delete-account-copy && npm run build"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
