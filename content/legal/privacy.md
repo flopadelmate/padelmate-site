@@ -92,6 +92,18 @@ Des outils de mesure d'audience et de suivi d'usage peuvent être utilisés afin
 
 Les données collectées via ces outils sont, autant que possible, agrégées et pseudonymisées.
 
+3.8. Signalements, modération et blocage
+
+Lorsque vous utilisez les fonctionnalités de signalement ou de blocage, les données suivantes peuvent être traitées :
+
+• Données relatives au signalement : catégorie/motif sélectionné, description libre (si renseignée), date et heure du signalement
+
+• Données de contexte nécessaires au traitement : identifiant du Contenu signalé (ex. message), identifiant de la conversation et/ou de l'Utilisateur concerné
+
+• Données relatives au blocage : identifiant de l'Utilisateur bloqué, date et heure du blocage/déblocage
+
+Ces données sont utilisées pour traiter les signalements, limiter les abus et améliorer la sécurité des Utilisateurs.
+
 ## 4. Pour quelles finalités et sur quelles bases légales les données sont-elles utilisées ?
 
 Les traitements de données personnelles effectués via PadelMate reposent sur les bases légales suivantes : exécution du contrat (conditions d'utilisation de l'Application), intérêt légitime du responsable du traitement, respect d'obligations légales, et, le cas échéant, consentement de l'Utilisateur.
@@ -138,9 +150,13 @@ Ces traitements sont mis en œuvre de façon proportionnée, sans porter atteint
 
 4.5. Sécurité et prévention des abus
 
-Base légale : intérêt légitime / obligation légale
+Base légale : exécution du contrat / intérêt légitime / obligation légale
 
 • Prévention et détection d'activités frauduleuses ou abusives
+
+• Traitement des signalements, modération des Contenus et des comptes
+
+• Gestion des blocages entre Utilisateurs
 
 • Sécurisation de l'Application et des données des Utilisateurs
 

@@ -126,6 +126,18 @@ L'Utilisateur s'engage à utiliser l'Application :
 
 L'Utilisateur demeure seul responsable des Contenus qu'il publie, transmet ou échange via l'Application.
 
+**Signalement et blocage**
+
+L'Application met à disposition des fonctionnalités permettant (i) de signaler un Contenu ou un Utilisateur, et (ii) de bloquer un Utilisateur.
+
+Le signalement implique la transmission à l'Éditeur des éléments nécessaires au traitement (notamment le Contenu concerné, des informations de contexte et des identifiants techniques).
+
+• Le signalement permet d'alerter l'Éditeur sur un Contenu ou un comportement susceptible d'être illicite ou contraire aux présentes CGU. L'Éditeur peut examiner le signalement et prendre toute mesure appropriée (suppression du Contenu, limitation d'accès, suspension/suppression de Compte, etc.).
+
+• Le blocage permet à l'Utilisateur de limiter ses interactions avec un autre Utilisateur (notamment empêcher de nouveaux messages et/ou limiter l'affichage des échanges dans l'interface). Il ne constitue pas une sanction et n'entraîne pas nécessairement la suppression des Contenus pour les autres Utilisateurs.
+
+L'Utilisateur s'engage à utiliser ces fonctionnalités de bonne foi. Tout usage abusif ou mensonger des signalements peut entraîner des mesures au titre de l'article 13.
+
 Il s'interdit notamment de :
 
 • tenir des propos injurieux, diffamatoires, discriminatoires, haineux, violents, obscènes ou contraires à l'ordre public ;
