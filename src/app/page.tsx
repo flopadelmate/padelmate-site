@@ -8,6 +8,9 @@ export const metadata: Metadata = createPageMetadata({
   path: "/",
 });
 
+const supportEmail = "max.padelmate@gmail.com";
+const supportMailtoHref = `mailto:${supportEmail}`;
+
 export default function HomePage() {
   return (
     <main id="main-content">
@@ -56,6 +59,26 @@ export default function HomePage() {
         <div className="container">
           <h2>Application mobile</h2>
           <p>PadelMate est actuellement disponible via l&apos;app mobile. Liens stores a venir.</p>
+        </div>
+      </section>
+
+      <section id="contact-support" className="section" aria-labelledby="contact-support-title">
+        <div className="container">
+          <div className="contact-support-card">
+            <p className="eyebrow">Contact / Support</p>
+            <h2 id="contact-support-title">Besoin d&apos;informations ou d&apos;aide ?</h2>
+            <p>
+              L&apos;equipe PadelMate peut vous accompagner pour toute question sur
+              l&apos;application, votre compte ou l&apos;utilisation du service.
+            </p>
+            <a className="button" href={supportMailtoHref}>
+              Contacter l&apos;equipe PadelMate
+            </a>
+            <p className="contact-support-fallback">
+              Si le bouton ne fonctionne pas, ecrivez a{" "}
+              <a href={`mailto:${supportEmail}`}>{supportEmail}</a>.
+            </p>
+          </div>
         </div>
       </section>
     </main>

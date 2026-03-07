@@ -165,6 +165,28 @@ main {
   color: var(--muted);
 }
 
+.contact-support-card {
+  display: grid;
+  gap: 0.8rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.contact-support-card h2 {
+  margin: 0;
+}
+
+.contact-support-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.contact-support-fallback {
+  font-size: 0.95rem;
+}
+
 .legal-document {
   background: var(--surface);
   border: 1px solid var(--line);
